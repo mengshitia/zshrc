@@ -105,4 +105,4 @@ alias ls="ls --color=auto"
 # activate zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# vim: set foldmethod=marker
+# vim:fdm=marker
