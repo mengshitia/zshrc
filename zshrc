@@ -115,7 +115,6 @@ bak () {
             cp -v $i "$i.bak"
         else
             print "File not found: $i"
-            return 2
         fi
     done
 }
