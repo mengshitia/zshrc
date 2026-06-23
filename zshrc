@@ -102,6 +102,25 @@ export EDITOR=vim
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
 
+# funtions {{{1
+# a quick way to create .bak backup files, multiple files are supported
+bak () {
+    local desc='bak files => cp -v file1 file1.bak; cp -v file2 file2.bak;...'
+    if [[ $# -eq 0 ]]; then
+        print ${desc}
+        return 1
+    fi
+    for i in $@; do
+        if [[ -f $i ]]; then
+            cp -v $i "$i.bak"
+        else
+            print "File not found: $i"
+            return 2
+        fi
+    done
+}
+# }}}
+
 # activate zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
