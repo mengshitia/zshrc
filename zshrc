@@ -50,7 +50,7 @@ setopt prompt_subst
 ## scripts and functions {{{2
 setopt multios              # perform tee or cat on multi-redirections
 
-## shell emulation
+## shell emulation {{{2
 setopt ksh_option_print     # print option status
 
 ## zle {{{2
