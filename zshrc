@@ -101,6 +101,8 @@ export EDITOR=vim
 # alias
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
+alias less="less --ignore-case --incsearch"
+alias paclog="less /var/log/pacman.log"
 
 # funtions {{{1
 # a quick way to create .bak backup files, multiple files are supported
