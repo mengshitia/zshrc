@@ -120,6 +120,11 @@ bak () {
         fi
     done
 }
+
+# give a summary of the space usage at current directory
+sum () {
+    du --human-readable --max-depth=1 . | sort --human-numeric-sort | less
+}
 # }}}
 
 # activate zsh-syntax-highlighting
