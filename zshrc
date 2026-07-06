@@ -58,6 +58,11 @@ setopt no_beep              # no error beep
 ## }}}
 # }}}
 
+# zshmodules {{{1
+# highlight current selection in completion menu
+zstyle ":completion:*" menu select
+# }}}
+
 # zshparam {{{1
 ## history {{{2
 # where to save the history when an interactive shell exits
