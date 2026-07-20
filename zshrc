@@ -106,6 +106,9 @@ export EDITOR=vim
 # alias
 alias grep="grep --color=auto"
 alias ls="ls --color=auto"
+alias la="ls --all"
+alias ll="ls -l --human-readable"
+alias lla="ll --all"
 alias less="less --ignore-case --incsearch"
 alias paclog="less /var/log/pacman.log"
 
